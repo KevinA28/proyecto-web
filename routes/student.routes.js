@@ -3,7 +3,7 @@ const router = express.Router();
 const studentController = require('../controllers/student.controller');
 const auth = require('../middlewares/auth.middleware');
 
-router.use(auth); // proteger todas las rutas
+//router.use(auth); // proteger todas las rutas
 
 router.get('/', studentController.getAll);
 router.get('/:id', studentController.getById);

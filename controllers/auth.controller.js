@@ -10,6 +10,7 @@ exports.register = async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: 'Error al registrar' });
   }
+  
 };
 
 exports.login = async (req, res) => {
